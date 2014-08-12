@@ -1,0 +1,234 @@
+body {
+     text-align: center;
+     padding: 0;
+     margin: 0;
+     background-color: #eee;
+ }
+
+#wrapper {
+  padding: 0px;
+  margin-top: 0px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#logoholder {
+  margin-bottom: 20px;
+}
+
+#over {
+    background-color: #eee;
+    border: none;
+}
+
+@media all and (min-width: 805px) {
+  body {
+    min-width: 800px;
+  }
+
+  #over {
+    position:relative;
+    height: 150px;
+  }
+
+  #wrapper {
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 800px;
+    padding-bottom: 20px;
+  }
+
+  #menu {
+    width: 480px;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 320px;
+  }
+
+  #menu ul {
+    display: inline;
+    float: left;
+  }
+
+  .logo {
+    display: block;
+    float: left;
+    position:absolute;
+    bottom: 1px;
+    left: 0px;
+    border: none;
+  }
+}
+
+
+.paper {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.logo img {
+    border: none;
+}
+
+#under {
+    background: url(/images/background.gif) #fff bottom left repeat-x;
+    padding-bottom: 20px;
+}
+
+#menu li {
+    float: left;
+    margin: 0 9px 0 0;
+    background-color: #fff;    
+}
+
+#menu li a
+{
+    font-family: arial, sans-serif;
+    background: url(/images/background.gif) #fff bottom left repeat-x;
+    height: 2em;
+    line-height: 2em;
+    width: 80px;
+    display: block;
+    border: 0.1em solid #dcdce9;
+    color: #0d2474;
+    text-decoration: none;
+    text-align: center;
+}
+
+#menu li a:hover, #menu li a.active
+{
+    background: black;
+    color: white;
+}
+
+#footer {
+    clear: both;
+    padding: 10px;
+    text-align: right;
+    color: #333;
+    font-size: 0.75em;
+}
+
+#footer a {
+    color: #333;
+    text-decoration: none;
+    padding-left: 0.5em;
+    margin-left: 0.5em;
+}
+
+#footer .add {
+    border-left: solid 1px #ccc;
+}
+
+#copyright {
+    margin-top: 5px;
+    color: #888;
+}
+
+#content {
+    padding: 10px;
+    padding-top: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+}
+
+.prose {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Georgia, serif;
+}
+
+.prose ul {
+    list-style-type:square;
+}
+
+.prose li {
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-family: Georgia, serif;
+}
+
+.person img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    color: #111;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.1em;
+    color: #222;
+}
+
+.call {
+    display: block;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ccc;
+    padding: 0px;
+    margin-bottom: 15px;
+    background: url(/images/background.gif) #fff bottom left repeat-x;
+}
+
+.call h2 {
+    background: #ddd;
+    display: block;
+    margin: 0px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.call .date {
+    display: block;
+    background: #eee;
+    margin: 0px;
+    padding: 10px;
+    font-size: 0.75em;
+    text-align: right;
+}
+
+.call p {
+    margin: 0px;
+    padding: 10px;
+}
+
+.email {
+    font-family: Courier, sans-serif;
+}
+
+a { 
+    text-decoration: none;
+}
+
+@media all and (max-width: 705px) {
+  #menu li a.active {
+    display: none;
+  }
+}

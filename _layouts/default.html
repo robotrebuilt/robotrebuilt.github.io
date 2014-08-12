@@ -1,0 +1,98 @@
+---
+---
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{page.title}}</title>
+    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="alternate" type="application/atom+xml" title="Robot Rebuilt - Atom" href="http://robotrebuilt.blogspot.com/feeds/posts/default" /> 
+    <link rel="alternate" type="application/rss+xml" title="Robot Rebuilt - RSS" href="http://robotrebuilt.blogspot.com/feeds/posts/default?alt=rss" /> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="/">Robot Rebuilt</a></h1>
+    </li>
+    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li><a href="/coverage/">Coverage</a></li>
+      <li class="has-dropdown">
+        <a href="#">About</a>
+        <ul class="dropdown"> 
+          <li><a href="/about/">The company</a></li>
+          <li><a href="/people/etorresj/">Eduardo</a></li>
+          <li><a href="/people/paulfitz/">Paul</a></li>
+        </ul>
+      </li>
+    </ul>
+
+  </section>
+</nav>
+
+<div class="content">
+
+{% unless page.styled %}
+<div class="row regular">
+  <div class="large-12 columns">
+{% endunless %}
+
+    {{page.content}}
+
+{% unless page.styled %}
+  </div>
+</div>
+{% endunless %}
+
+</div>
+
+<div class="footer-bottom">
+  <div class="row regular">
+    <div class="large-4 medium-4 columns">
+      <ul>
+	<li><a href="/about/">About Robot Rebuilt</a></li>
+	<li><a href="/coverage/">Media Coverage</a></li>
+      </ul>
+    </div>
+    <div class="large-4 medium-4 columns">
+      <ul>
+	<li><a href="/people/etorresj/">Eduardo Torres-Jara</a></li>
+	<li><a href="/people/paulfitz/">Paul Fitzpatrick</a></li>
+      </ul>
+    </div>
+    <div class="large-4 medium-4 columns">
+      <ul>
+	<li><a href="/jobs/">Jobs</a></li>
+	<li><a href="/contact/">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/foundation/js/foundation.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20429156-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+  </body>
+</html>
+

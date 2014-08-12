@@ -1,0 +1,72 @@
+---
+links:
+ - home
+ - about
+ - jobs
+ - contact
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>{{page.title}}</title>
+<link rel="stylesheet" type="text/css" href="/css/base.css?ver=4" />
+<link rel="alternate" type="application/atom+xml" title="Robot Rebuilt - Atom" href="http://robotrebuilt.blogspot.com/feeds/posts/default" /> 
+<link rel="alternate" type="application/rss+xml" title="Robot Rebuilt - RSS" href="http://robotrebuilt.blogspot.com/feeds/posts/default?alt=rss" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<div id="over" class="paper">
+<div id="logoholder"><a href='/'><img class='logo' src='/images/robot_rebuilt_shadow.png' width='299' height='94' alt='Robot Rebuilt' /></a></div>
+<div id="menu">
+<ul>
+{% for link in page.links %}
+  <li><a {% if link == page.cat %}class='active' {% endif %}href='/{{ link | append: '/' | replace: 'home/', '' }}'>{{link}}</a></li>
+{% endfor %}
+</ul>
+</div>
+<div style="clear: both;"></div>
+</div>
+
+<div class="paper" id="under">
+
+<div id="content">
+
+{{ page.content }}
+
+</div>
+
+
+<div id="footer">
+<a href='/about/'>about us</a>
+<a class="add" href='/terms/privacy/'>privacy policy</a>
+<a class="add" href='mailto:info@robotrebuilt.com'>email us</a><br />
+<div id="copyright">
+Copyright (C) 2014 Robot Rebuilt, Inc. Some rights reserved.
+</div>
+</div>
+
+</div>
+
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20429156-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Test</title>
+
+<link rel="stylesheet" type="text/css" href="/p/base.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript" src="/p/jquery/jquery.js"></script>
+<script src="/p/jquery/js/jquery-ui-1.8.23.custom.min.js"></script>
+<link href="/p/jquery/css/ui-lightness/jquery-ui-1.8.23.custom.css" rel="stylesheet" type="text/css" />
+<script src="/p/jquery/jquery.knob.js"></script>
+<script src="/p/utils/canvas-to-blob.js" type="text/javascript"></script>
+<script src="/p/utils/FileSaver.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/p/jv/blender.js"></script>
+<script type="text/javascript" src="/p/jv/makesweet.js"></script>
+<script type="text/javascript" src="/p/jv/init.js"></script>
+<script src="/p/swfobject/swfobject.js"></script>  
+<body>
+
+<div id="wrapper">
+
+<script>
+var generators = [];
+var updater = null;
+generators.push({
+  'html5_prefix': "/p/output",
+  'html5_title': "zig",
+  'html5_link': "zig",
+  'html5_key': "zig",
+  'html5_test': "test"
+});
+
+jQuery(function() {
+  makesweet_init(generators);
+  });
+</script>
+
+<table>
+<tr>
+<td>
+</td>
+<td>
+  <ul id="widget-bar" style="display: none;">
+    <li id="wb-add"><a href="#"></a></li>
+    <li id="wb-remove"><a href="#"></a></li>
+    <li id="wb-front"><a href="#"></a></li>
+    <li id="wb-save"><a href="#"></a></li>
+    <li id="wb-animate"><a href="#"></a></li>
+    <li id="wb-upload" class="special"><a href="#"></a></li>
+  </ul>
+<div id="adder_block">
+<input type="button" id="add_text" value="Abc..." />
+<input type="file" id="files" name="files[]" title="hello" />
+</div>
+<div id="texts" style="display: none;">
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div id="slider" style="height:150px; margin: 0px auto;">
+</div>
+<br />
+<input class="knob" data-width="75" data-height="75" data-displayPrevious=true data-fgColor="#FF8C00" data-skin="tron" data-cursor=true value="0" data-thickness=".2" />
+</td>
+<td>
+  <div id="scroller" class="loadable" style="max-width: 8000px; max-height: 6000px; overflow: auto; position: relative;">
+    <img id="loader_background" class="xloadable" style="position: absolute; left: 0px; top: 0px;"></img>
+    <canvas id="loader" class="xloadable" style="position: absolute; left: 0px; top: 0px;"></canvas>
+    <canvas id="miniloader_none" class="xloadable" style="display: none; position: absolute; left: 0px; top: 0px;"></canvas>
+  </div>
+    <div id="makesweet_thumbnail" style="displayxxx: none;">
+    </div>
+</td>
+</tr>
+</table>
+
+</div>
+
+</body>
+</html>
